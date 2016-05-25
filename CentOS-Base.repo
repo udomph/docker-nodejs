@@ -1,0 +1,31 @@
+# CentOS-Base.repo
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://mirror1.ku.ac.th/centos/$releasever/os/$basearch/
+gpgcheck=0
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=http://mirror1.ku.ac.th/centos/$releasever/updates/$basearch/
+gpgcheck=0
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=http://mirror1.ku.ac.th/centos/$releasever/extras/$basearch/
+gpgcheck=0
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=http://mirror1.ku.ac.th/centos/$releasever/centosplus/$basearch/
+gpgcheck=0
+enabled=1
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib
+baseurl=http://mirror1.ku.ac.th/centos/$releasever/contrib/$basearch/
+gpgcheck=0
+enabled=0
